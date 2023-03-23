@@ -1,0 +1,13 @@
+<?php 
+
+include('db.php');
+$val="testing";
+
+$result=mysqli_query($con,"INSERT INTO test(val) VALUES('$val')");
+if($result){
+	echo "its done";
+}else{
+	echo "problem";
+}
+
+?>
